@@ -40,3 +40,7 @@ v8
 #modify the value of 7th index
 v2[7]=31
 v2
+
+#modify the value of 8th index
+v3[8]=32
+v3
