@@ -1,4 +1,6 @@
 #creation of a vector
+#atomic
+#contains elements of same data type
 #using c function
 a<-c(1,2,3,4,5)
 print(a)
