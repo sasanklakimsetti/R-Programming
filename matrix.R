@@ -26,7 +26,7 @@ c[3,4] = 39
 print(c)
 
 #delete 1st row of the matrix
-#syntax : matrix_name<-matrix_name[-row_to_delete,col_to_delete]
+#syntax : matrix_name<-matrix_name[-row_to_delete,-col_to_delete]
 c<-c[-1,]
 print(c)
 #delete 2nd column of the matrix
@@ -35,9 +35,9 @@ print(c)
 
 #to add more rows and more columns we use rbind and cbind
 #rbind is to add rows
-#syntax: rbind(c,data
+#syntax: rbind(matrix_name,data)
 #cbind is to add columns
-#syntax: cbind(c,data)
+#syntax: cbind(matrix_name,data)
 c<-rbind(c,c(40:42))
 c<-cbind(c,c(46:47))
 print(c)

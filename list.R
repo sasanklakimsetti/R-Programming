@@ -7,7 +7,7 @@ c<-c(TRUE,FALSE)
 d<-c(10.5,11.5,2.5)
 e<-list(a,b,c,d)   #list
 e
-list1<-list(c("Sasank","Hello"),c(10,15),TRUE,1.5)  #if we use a c function in the list declaration then it will be seperate vector inside the vector
+list1<-list(c("Sasank","Hello"),c(10,15),TRUE,1.5)  #if we use a c function in the list declaration then it will be seperate vector inside the list
 list1
 
 #names() function is used for naming the list
@@ -22,8 +22,9 @@ list2        #it is like the column names in excel
 
 #accessing by indexing
 #accessing  the vector inside the list
-v1<-list2[[1]]
-v1[[1]]
+v1<-list2[[1]]   #will access and store the first index of the list into a vector
+v1
+v1[[1]]  #will access the first index of the vector v1 i.e. first index of the first index of list2
 v1[[2]]
 #accessing the nested list
 nested_list<-list2[[3]]
@@ -52,3 +53,4 @@ print(list3[[3]][[3]])
 
 #accessing 2nd element of first sublist
 print(list3[[1]][[2]])
+

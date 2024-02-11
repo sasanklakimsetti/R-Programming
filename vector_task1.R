@@ -27,16 +27,18 @@ v3<-16:30
 v4<-c(v2,v3)
 v4
 
-v5=v2+v3
+v5<-v2+v3  #v5=v2+v3    #v5<-c(v2,v3)
 v6=v2-v3
 v7=v2*v3
 v8=v2/v4
-
+v9<-v2%%v3
+v10<-v2%/%v3
 v5
 v6
 v7
 v8
-
+v9
+v10
 #modify the value of 7th index
 v2[7]=31
 v2
