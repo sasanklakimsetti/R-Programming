@@ -36,3 +36,13 @@ print(arr2[1,,3])  #will print 1st row of 3rd matrix
 print(arr2[1,c(1,2),])  #will print 1st and 2nd column if all matrix
 print(arr2[1,1,c(1,2)]) #will print 1st row 1st column of 1st and 2nd matrix
 #c() function in accessing elements of an array is used for accessing multiple rows/columns/matrix elements
+
+#apply() function
+v1=c(1:4)
+v2=c(5:9)
+v3<-array(c(v1,v2),dim=c(3,3,2))
+v3
+result<-apply(v3,c(1),sum)      #row-wise calculation of sum
+result
+result<-apply(v3,c(2),sum)      #column-wise calculation of sum
+result

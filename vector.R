@@ -73,3 +73,28 @@ a13==6  #checks the whole vector and return TRUE or FALSE for each index accordi
 x<-5 #declaration of an integer
 print(x) # can also just write x 
 
+
+a1<-seq(1,10,by=3)   #This line creates a sequence starting from 1 to 10 with a step of 3. So, a1 will be a vector containing the values 1, 4, 7, and 10.
+b1<-seq(1,30,length.out=5)   #This line creates a sequence starting from 1 to 30 with a length of 5. The resulting values in b1 will be equally spaced within the specified range. In this case, b1 will be a vector containing 1, 8.75, 16.5, 24.25, and 30.
+a1
+b1
+
+c1<-c(10,20,30,40)
+#print 10 2 times
+#c1[1]
+#c1[1]
+for(i in 1:2)
+  print(c1[1])
+#print 20 3 times
+#c1[2]
+#c1[2]
+#c1[2]
+for(i in 1:3)
+  print(c1[2])
+#print 40 4 times
+#c1[4]
+#c1[4]
+#c1[4]
+#c1[4]
+for(i in 1:4)
+  print(c1[4])

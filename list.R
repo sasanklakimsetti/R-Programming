@@ -54,3 +54,15 @@ print(list3[[3]][[3]])
 #accessing 2nd element of first sublist
 print(list3[[1]][[2]])
 
+
+
+x<-list(c("Amit","Mani","Mahi","Ankit"),
+        c(20,21,22,30),
+        c("MBA","MCA","BBA","B.Tech"),
+        list("Delhi","Mumbai","Jammu","Kashmir"))
+#from the above list, access all elements except MCA
+f_list<-lapply(x,function(sublist) subset(sublist, sublist!="MCA"))
+f_list
+#access 1st and 3rd object of sublist and last object without Jammu
+f_list1<-lapply(x, function(sublist) subset(sublist, sublist!="Jammu"))
+f_list1
