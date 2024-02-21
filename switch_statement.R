@@ -1,0 +1,119 @@
+#switch statement
+
+#switch implemented by index value
+b<-2
+c<-switch(b,
+          "Hello",
+          "World",
+          "R",
+          "Cpp")
+print(c)
+
+#switch implemented by matching values
+#if switch is implemented by matching values then the value to be matched should be present in double quotes i.e. it is matching the string so the input/ matching value should also be in the string not in numeric
+b1<-"6"
+c1<-switch(b1,
+           "2"="Hello",
+           "4"="World",
+           "6"="R",
+           "8"="Cpp")
+print(c1)
+
+#give 5 examples of switch implemented by indexing and matching
+a1<-1
+a2<-2
+a3<-3
+a4<-4
+a5<-5
+a6<-switch(a1,
+           "a",
+           "b",
+           "c",
+           "d",
+           "e")
+print(a6)
+a7<-switch(a2,
+           "a",
+           "b",
+           "c",
+           "d",
+           "e")
+print(a7)
+a8<-switch(a3,
+           "a",
+           "b",
+           "c",
+           "d",
+           "e")
+print(a8)
+a9<-switch(a4,
+           "a",
+           "b",
+           "c",
+           "d",
+           "e")
+print(a9)
+a10<-switch(a5,
+           "a",
+           "b",
+           "c",
+           "d",
+           "e")
+print(a10)
+a11<-as.integer(readline("Enter a number: "))
+a12<-switch(a11,
+            "a",
+            "b",
+            "c",
+            "d",
+            "e")
+print(a12)
+d1<-"1"
+d2<-"2"
+d3<-"3"
+d4<-"4"
+d5<-"5"
+d6<-switch(d1,
+           "1"=1,
+           "2"=2,
+           "3"=3,
+           "4"=4,
+           "5"=5)
+print(d6)
+d7<-switch(d2,
+           "1"=1,
+           "2"=2,
+           "3"=3,
+           "4"=4,
+           "5"=5)
+print(d7)
+d8<-switch(d3,
+           "1"=1,
+           "2"=2,
+           "3"=3,
+           "4"=4,
+           "5"=5)
+print(d8)
+d9<-switch(d4,
+           "1"=1,
+           "2"=2,
+           "3"=3,
+           "4"=4,
+           "5"=5)
+print(d9)
+d10<-switch(d5,
+           "1"=1,
+           "2"=2,
+           "3"=3,
+           "4"=4,
+           "5"=5)
+print(d10)
+d11<-readline("Enter the number: ")
+d12<-switch(d11,
+            "5"=1,
+            "2"=2,
+            "3"=3,
+            "4"=4,
+            "1"=5)
+print(d12)
+
