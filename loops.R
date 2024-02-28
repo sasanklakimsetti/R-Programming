@@ -117,8 +117,4 @@ repeat{
 }
 
 
-#while loop
-#syntax: while(condition){
-#           statement
-#        }
 
