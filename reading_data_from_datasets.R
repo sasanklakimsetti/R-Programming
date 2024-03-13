@@ -38,9 +38,9 @@ a[1,3]
 #display element in the 20th row and 7th column
 a[20,7]
 #display age and bloodpressure of 1st 10 persons from dataset diabetes
-print(subset(head(a,n=10),,select=c(Age,BloodPressure)))
+print(subset(head(a,n=10),select=c(Age,BloodPressure)))
 #display age and bloodpressure of last 10 persons from dataset diabetes
-print(subset(tail(a,n=10),,select=c(Age,BloodPressure)))
+print(subset(tail(a,n=10),select=c(Age,BloodPressure)))
 #display all data from dataset diabetes whose Glucose level is 125
 print(subset(a,a$Glucose==125))
 #display age of person whose skinThickness is more than 19 and age is more than 35 and less than 50
