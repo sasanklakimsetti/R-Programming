@@ -1,7 +1,7 @@
 #SQL
 #package : sqldf
 #command: install.packages("sqldf")
-library("sqldf")   #to load the package into rstudio
+library("sqldf")   #to load the package into rstudio   #need to be run everytime in every sql file
 stud<-read.csv("C://lpu//4th sem//INT232 - R Programming//Datasets//students.csv")
 View(stud)
 stud
