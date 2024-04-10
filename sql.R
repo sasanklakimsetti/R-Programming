@@ -33,3 +33,4 @@ sqldf("Select marks,name from stud group by name")
 sqldf("Select roll_no, marks from stud group by name")
 sqldf("Select name,marks,roll_no as reg_no from stud group by name")  #assign reg_no according to their marks in ascending order
 sqldf("Select roll_no,name from stud group by name having sum(marks)>80")  #will retrieve roll_no and name of the student from the table where sum of group of students greater than 80(if only one name exists, then that will be extracted if more than one then will get grouped)
+

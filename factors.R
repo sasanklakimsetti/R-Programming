@@ -42,3 +42,4 @@ y    #will print West West South South East as those were the values where the l
 #gl(no.of levels, replicants, labels) is used to generate replicants/ factors with specific patterns
 x<-gl(3,4,labels=c("DBMS","R Programming","Excel"))
 x
+
