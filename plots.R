@@ -37,9 +37,11 @@ y2 <- c(6:10)
 plot(x2, y2)
 points(x2, y2, col = "green", cex = 2)  # to compare two scatter plots, we will use points function
 plot(x2,y2,type = "s") #staircase will be represented
-plot(x2,y2,type="p") #circle
-plot(x2,y2,type="o")  #circle along with trendline
+plot(x2,y2,type="p") #circle/ scatter
+plot(x2,y2,type="o")  #circle along with trendline. no break b/w circle and line
 plot(x2,y2,type="n") #empty graph
+plot(x2,y2,type="l")  # line graph
+plot(x2,y2,type="b") # line graph with circles. break b/w circle and line
 # type tells what the graph element to represent data
 
 v<-c(13,22,28,7,31)
@@ -82,3 +84,31 @@ e2<-c(41:50)
 plot(d2,e2,col="green")
 points(d2,e2,col="violet",cex=2)
 #run chunks for better understanding
+
+plot(d2,e2,col='blue',type="l",lwd=10)  # lwd used to change the texture i.e. width of the line
+plot(d2,e2,col='blue',type="l",lwd=10, lty=12) # lty is used to change the texture of the line i.e. with breaks
+plot(d2,e2,col='blue',type="b",lwd=10, lty=12, pch=4) 
+plot(d2,e2,col='blue',type="o",lwd=10, lty=12, pch=1)
+# pch is used to change the texture of the circle in the plot. it will be only applicable for type "b" and "o"
+plot(d2,e2,col='blue',type="o",lwd=10, lty=12, pch=LETTERS[1:5])   # this will print letters instead of circle
+plot(d2,e2,col='blue',type="l",xlim = c(0,10), ylim=c(10,20)) # x axis limits will be in between 0 to 10 and y-axis limits will be in b/w 10 to 20
+
+#  pie() : used to create a pie chart
+xx<-c(23,56,20,63)
+label<-c("A","B","C","D")
+pie(xx,label)
+
+xx1<-c(23,56,20,63)
+label2<-LETTERS[1:4]
+pie(xx1,label2,main="Pie chart")
+
+xx2<-c(23,56,20,63)
+label3<-LETTERS[1:4]
+pie(xx2,label3, main="Graph",col=c("Red","Green","Blue","Orange"))  # this will change the color of pies. otherwise will use the default color
+
+# install.packages("plotrix")  # this will be useful to create 3d pie charts
+library(plotrix)
+xx4<-c(100,150,200,300,600)
+pie3D(xx4, main="3D chart", labels=LETTERS[1:5],col=c("lightblue","orange","green","violet","red"))
+legend("topleft",c("100","200","300","400","500"),fill=c("lightblue","orange","green","violet","red"))
+# the order of the color will be applicable to order of the data
